@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    nav {
+        background-color: #333;
+        padding: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+    }
+
+    nav ul li a:hover {
+        color: #ff6347;
+    }
+
+    nav ul li a:active {
+        color: #ff4500;
+    }
+
+    section {
+        padding: 20px;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="57c26040-af0f-432a-828e-50743c1bf4c2">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="" alt=""></button>
+        </form>
+        <div class="contact-right">
+            <img src="assets/Background.png" alt="">
+        </div>
+    </div> 
+    
+</body>
+</html>
